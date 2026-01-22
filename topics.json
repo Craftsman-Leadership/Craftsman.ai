@@ -1,0 +1,257 @@
+[
+  {
+    "title": "What is Artificial Intelligence?",
+    "difficulty": "beginner",
+    "tags": ["basics", "introduction", "ai-fundamentals"]
+  },
+  {
+    "title": "How ChatGPT Works: A Simple Explanation",
+    "difficulty": "beginner",
+    "tags": ["chatgpt", "language-models", "basics"]
+  },
+  {
+    "title": "AI in Your Daily Life: Examples You Might Not Notice",
+    "difficulty": "beginner",
+    "tags": ["applications", "daily-life", "introduction"]
+  },
+  {
+    "title": "The Difference Between AI, Machine Learning, and Deep Learning",
+    "difficulty": "beginner",
+    "tags": ["basics", "terminology", "concepts"]
+  },
+  {
+    "title": "How to Write Better Prompts for AI",
+    "difficulty": "beginner",
+    "tags": ["prompt-engineering", "chatgpt", "practical"]
+  },
+  {
+    "title": "Understanding Tokens in Language Models",
+    "difficulty": "beginner",
+    "tags": ["language-models", "tokens", "basics"]
+  },
+  {
+    "title": "What Can AI Do? Current Capabilities and Limitations",
+    "difficulty": "beginner",
+    "tags": ["capabilities", "limitations", "overview"]
+  },
+  {
+    "title": "AI Image Generation: How DALL-E and Midjourney Work",
+    "difficulty": "beginner",
+    "tags": ["image-generation", "dall-e", "midjourney"]
+  },
+  {
+    "title": "Voice Assistants Explained: Siri, Alexa, and Google Assistant",
+    "difficulty": "beginner",
+    "tags": ["voice-assistants", "applications", "speech"]
+  },
+  {
+    "title": "What is a Neural Network?",
+    "difficulty": "intermediate",
+    "tags": ["neural-networks", "machine-learning", "basics"]
+  },
+  {
+    "title": "How Neural Networks Learn: Backpropagation Explained",
+    "difficulty": "intermediate",
+    "tags": ["neural-networks", "training", "backpropagation"]
+  },
+  {
+    "title": "Understanding Transformer Architecture",
+    "difficulty": "intermediate",
+    "tags": ["transformers", "architecture", "deep-learning"]
+  },
+  {
+    "title": "What is Training Data and Why Does It Matter?",
+    "difficulty": "intermediate",
+    "tags": ["training-data", "machine-learning", "datasets"]
+  },
+  {
+    "title": "Supervised vs Unsupervised Learning",
+    "difficulty": "intermediate",
+    "tags": ["machine-learning", "learning-types", "concepts"]
+  },
+  {
+    "title": "How Recommendation Systems Work",
+    "difficulty": "intermediate",
+    "tags": ["recommendation-systems", "applications", "algorithms"]
+  },
+  {
+    "title": "Natural Language Processing: From Text to Understanding",
+    "difficulty": "intermediate",
+    "tags": ["nlp", "language-models", "text-processing"]
+  },
+  {
+    "title": "Computer Vision Basics: How Machines See",
+    "difficulty": "intermediate",
+    "tags": ["computer-vision", "image-processing", "cnn"]
+  },
+  {
+    "title": "Understanding Embeddings in AI",
+    "difficulty": "intermediate",
+    "tags": ["embeddings", "representation", "vectors"]
+  },
+  {
+    "title": "What is Transfer Learning?",
+    "difficulty": "intermediate",
+    "tags": ["transfer-learning", "machine-learning", "techniques"]
+  },
+  {
+    "title": "Overfitting and Underfitting in Machine Learning",
+    "difficulty": "intermediate",
+    "tags": ["overfitting", "training", "model-optimization"]
+  },
+  {
+    "title": "How AI Detects Spam and Fraud",
+    "difficulty": "intermediate",
+    "tags": ["applications", "classification", "security"]
+  },
+  {
+    "title": "Introduction to Reinforcement Learning",
+    "difficulty": "intermediate",
+    "tags": ["reinforcement-learning", "machine-learning", "agents"]
+  },
+  {
+    "title": "What are Convolutional Neural Networks?",
+    "difficulty": "intermediate",
+    "tags": ["cnn", "computer-vision", "neural-networks"]
+  },
+  {
+    "title": "Understanding Attention Mechanisms",
+    "difficulty": "intermediate",
+    "tags": ["attention", "transformers", "mechanisms"]
+  },
+  {
+    "title": "How AI Plays Games: From Chess to Go",
+    "difficulty": "intermediate",
+    "tags": ["game-ai", "reinforcement-learning", "applications"]
+  },
+  {
+    "title": "Batch Normalization and Layer Normalization Explained",
+    "difficulty": "advanced",
+    "tags": ["normalization", "training", "techniques"]
+  },
+  {
+    "title": "Fine-Tuning Large Language Models",
+    "difficulty": "advanced",
+    "tags": ["fine-tuning", "language-models", "training"]
+  },
+  {
+    "title": "Understanding Model Parameters and Hyperparameters",
+    "difficulty": "advanced",
+    "tags": ["parameters", "hyperparameters", "optimization"]
+  },
+  {
+    "title": "Gradient Descent Optimization Algorithms",
+    "difficulty": "advanced",
+    "tags": ["optimization", "gradient-descent", "training"]
+  },
+  {
+    "title": "What are Generative Adversarial Networks (GANs)?",
+    "difficulty": "advanced",
+    "tags": ["gans", "generative-models", "deep-learning"]
+  },
+  {
+    "title": "The Architecture of GPT Models",
+    "difficulty": "advanced",
+    "tags": ["gpt", "architecture", "language-models"]
+  },
+  {
+    "title": "Retrieval-Augmented Generation (RAG) Explained",
+    "difficulty": "advanced",
+    "tags": ["rag", "language-models", "retrieval"]
+  },
+  {
+    "title": "Model Quantization and Compression Techniques",
+    "difficulty": "advanced",
+    "tags": ["quantization", "optimization", "deployment"]
+  },
+  {
+    "title": "Understanding Diffusion Models for Image Generation",
+    "difficulty": "advanced",
+    "tags": ["diffusion-models", "image-generation", "generative-ai"]
+  },
+  {
+    "title": "Bias and Fairness in AI Systems",
+    "difficulty": "intermediate",
+    "tags": ["ethics", "bias", "fairness"]
+  },
+  {
+    "title": "AI Safety and Alignment",
+    "difficulty": "advanced",
+    "tags": ["safety", "alignment", "ethics"]
+  },
+  {
+    "title": "Federated Learning: Privacy-Preserving AI",
+    "difficulty": "advanced",
+    "tags": ["federated-learning", "privacy", "distributed"]
+  },
+  {
+    "title": "Few-Shot and Zero-Shot Learning",
+    "difficulty": "advanced",
+    "tags": ["few-shot", "zero-shot", "learning-paradigms"]
+  },
+  {
+    "title": "Understanding Perplexity in Language Models",
+    "difficulty": "advanced",
+    "tags": ["perplexity", "evaluation", "language-models"]
+  },
+  {
+    "title": "The Role of Data Augmentation in Training",
+    "difficulty": "intermediate",
+    "tags": ["data-augmentation", "training", "techniques"]
+  },
+  {
+    "title": "How AI Translates Languages",
+    "difficulty": "intermediate",
+    "tags": ["translation", "nlp", "applications"]
+  },
+  {
+    "title": "Understanding Context Windows in Language Models",
+    "difficulty": "intermediate",
+    "tags": ["context-windows", "language-models", "limitations"]
+  },
+  {
+    "title": "Multi-Modal AI: Combining Vision and Language",
+    "difficulty": "advanced",
+    "tags": ["multi-modal", "vision-language", "integration"]
+  },
+  {
+    "title": "How AI Generates Code",
+    "difficulty": "intermediate",
+    "tags": ["code-generation", "applications", "copilot"]
+  },
+  {
+    "title": "Understanding Activation Functions",
+    "difficulty": "intermediate",
+    "tags": ["activation-functions", "neural-networks", "components"]
+  },
+  {
+    "title": "The Environmental Impact of Training AI Models",
+    "difficulty": "beginner",
+    "tags": ["environment", "sustainability", "ethics"]
+  },
+  {
+    "title": "Explainable AI: Making Black Boxes Transparent",
+    "difficulty": "advanced",
+    "tags": ["explainability", "interpretability", "xai"]
+  },
+  {
+    "title": "Ensemble Methods in Machine Learning",
+    "difficulty": "intermediate",
+    "tags": ["ensemble", "methods", "techniques"]
+  },
+  {
+    "title": "Understanding Loss Functions",
+    "difficulty": "intermediate",
+    "tags": ["loss-functions", "training", "optimization"]
+  },
+  {
+    "title": "The Future of AI: Current Trends and Predictions",
+    "difficulty": "beginner",
+    "tags": ["future", "trends", "overview"]
+  },
+  {
+    "title": "Model Evaluation Metrics: Accuracy, Precision, Recall",
+    "difficulty": "intermediate",
+    "tags": ["evaluation", "metrics", "performance"]
+  }
+]

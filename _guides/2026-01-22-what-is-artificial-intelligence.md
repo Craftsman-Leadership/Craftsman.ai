@@ -1,0 +1,89 @@
+---
+layout: guide
+title: "What is Artificial Intelligence?"
+date: 2026-01-22
+difficulty: beginner
+tags: ["basics", "introduction", "ai-fundamentals"]
+description: "A beginner-friendly introduction to what is artificial intelligence?"
+estimated_time: "8 min read"
+---
+
+## Introduction
+
+Artificial Intelligence (AI) is technology that enables computers to perform tasks that typically require human intelligence. In this guide, you'll learn what AI really is, how it works at a basic level, and where you encounter it in everyday life.
+
+## Prerequisites
+
+No prerequisites needed! This guide is designed for complete beginners.
+
+## What Exactly is AI?
+
+Think of AI as teaching a computer to learn from experience, just like you do. When you learn to ride a bike, you don't memorize every possible situation—you learn patterns and adjust. AI works similarly.
+
+**AI is software that can:**
+- Learn from data and examples
+- Recognize patterns
+- Make decisions based on what it has learned
+- Improve its performance over time
+
+### A Simple Analogy
+
+Imagine teaching a child to identify dogs. You show them many pictures of different dogs—big, small, fluffy, short-haired—and eventually they learn what makes a dog a dog. That's essentially how many AI systems learn: by seeing lots of examples and finding the common patterns.
+
+## How Does AI Learn?
+
+AI doesn't learn like copying information into its memory. Instead, it learns by:
+
+1. **Seeing Examples**: The AI is shown lots of data (pictures, text, numbers, etc.)
+2. **Finding Patterns**: It discovers what features are important
+3. **Making Guesses**: It tries to make predictions or decisions
+4. **Getting Feedback**: It finds out if it was right or wrong
+5. **Improving**: It adjusts its approach based on the feedback
+
+This process is called **machine learning**, and it's a type of AI.
+
+## Types of AI You Should Know
+
+### Narrow AI (Weak AI)
+
+This is AI that's really good at ONE specific task. Most AI today is narrow AI:
+- Spam filters that sort your email
+- Voice assistants like Siri or Alexa
+- Netflix recommendations
+- Face recognition on your phone
+
+### General AI (Strong AI)
+
+This would be AI that can do any intellectual task a human can do. **This doesn't exist yet** and is still science fiction. When people worry about AI taking over the world, they're thinking of general AI.
+
+## Real-World Examples
+
+**Spam Filters**: Your email learns what you consider spam by watching which emails you delete or mark as junk. Over time, it gets better at filtering.
+
+**Autocomplete**: When your phone suggests the next word as you type, it's using AI trained on millions of text messages to predict what you'll likely write next.
+
+**Photo Organization**: When your phone automatically groups photos of the same person, it's using AI to recognize faces and match them.
+
+**Music Recommendations**: Spotify suggests songs by learning your taste and comparing it to millions of other users with similar preferences.
+
+## Try It Yourself
+
+1. **Notice AI Around You**: For the next day, count how many times you interact with AI. You'll be surprised!
+
+2. **Test Voice Recognition**: Try speaking to your phone's voice assistant with different accents or in noisy environments. Notice how it learns to understand you better over time.
+
+3. **Explore Recommendations**: Pay attention to recommendations on YouTube, Netflix, or Amazon. Try to figure out why the AI suggested what it did based on your past behavior.
+
+## Key Takeaways
+
+- AI is software that learns from experience and data rather than following fixed rules
+- Most current AI is "narrow AI"—good at specific tasks, not general intelligence
+- AI learns by seeing examples, finding patterns, and getting feedback
+- You interact with AI dozens of times per day, often without realizing it
+- AI isn't magic—it's a tool created by humans to solve specific problems
+
+## Further Reading
+
+- **"AI for Everyone" by Andrew Ng**: A free online course that explains AI concepts without requiring programming knowledge
+- **"The Alignment Problem" by Brian Christian**: An accessible book exploring how AI learns and the challenges involved
+- **AI News**: Follow sites like MIT Technology Review or The Verge's AI section to stay updated on AI developments

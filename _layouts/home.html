@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<div class="hero">
+    <div class="container">
+        <h1 class="hero-title">{{ site.title }}</h1>
+        <p class="hero-description">{{ site.description }}</p>
+    </div>
+</div>
+
+<div class="filters container">
+    <div class="search-box">
+        <input type="text" id="search" placeholder="Search guides..." aria-label="Search guides">
+    </div>
+    <div class="filter-buttons">
+        <button class="filter-btn active" data-difficulty="all">All Levels</button>
+        <button class="filter-btn" data-difficulty="beginner">Beginner</button>
+        <button class="filter-btn" data-difficulty="intermediate">Intermediate</button>
+        <button class="filter-btn" data-difficulty="advanced">Advanced</button>
+    </div>
+</div>
+
+<div class="guides-grid container" id="guides-grid">
+    {% assign sorted_guides = site.guides | sort: 'date' | reverse %}
+    {% for guide in sorted_guides %}
+        {% include guide-card.html guide=guide %}
+    {% endfor %}
+</div>
+
+<div class="no-results" id="no-results" style="display: none;">
+    <div class="container">
+        <p>No guides found matching your search.</p>
+    </div>
+</div>
+
+{{ content }}

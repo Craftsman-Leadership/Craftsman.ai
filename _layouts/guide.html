@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<article class="guide">
+    <header class="guide-header">
+        <div class="container">
+            <h1 class="guide-title">{{ page.title }}</h1>
+            <div class="guide-meta">
+                <span class="difficulty difficulty-{{ page.difficulty }}">{{ page.difficulty | capitalize }}</span>
+                <span class="estimated-time">{{ page.estimated_time }}</span>
+                <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+            </div>
+            <p class="guide-description">{{ page.description }}</p>
+            <div class="guide-tags">
+                {% for tag in page.tags %}
+                    <span class="tag">{{ tag }}</span>
+                {% endfor %}
+            </div>
+        </div>
+    </header>
+
+    <div class="guide-content container">
+        {{ content }}
+    </div>
+
+    <footer class="guide-footer container">
+        <a href="{{ '/' | relative_url }}" class="back-link">← Back to All Guides</a>
+    </footer>
+</article>

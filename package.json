@@ -1,0 +1,21 @@
+{
+  "name": "forexample-ai",
+  "version": "1.0.0",
+  "description": "AI education guides automatically generated and published on GitHub Pages",
+  "main": "scripts/generate-guide.js",
+  "scripts": {
+    "generate": "node scripts/generate-guide.js"
+  },
+  "keywords": [
+    "ai",
+    "education",
+    "guides",
+    "jekyll",
+    "github-pages"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.0"
+  }
+}

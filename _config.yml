@@ -1,0 +1,38 @@
+# Site settings
+title: "For Example AI"
+description: "Learn AI concepts through practical, step-by-step guides"
+url: "https://forexample.ai"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Collections
+collections:
+  guides:
+    output: true
+    permalink: /guides/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "guides"
+    values:
+      layout: "guide"
+
+# Exclude from processing
+exclude:
+  - node_modules
+  - scripts
+  - package.json
+  - package-lock.json
+  - README.md
+  - topics.json
+  - generated-topics.json
+  - .github
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
