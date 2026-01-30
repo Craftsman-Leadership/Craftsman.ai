@@ -1,11 +1,11 @@
 # For Example AI
 
-An AI education website that automatically generates and publishes step-by-step guides on AI topics. Built with Jekyll and powered by NVIDIA's free AI models for text and Stable Diffusion XL for images, new educational content with custom AI-generated illustrations is automatically created and deployed on every commit.
+An AI education website that automatically generates and publishes step-by-step guides on AI topics. Built with Jekyll and powered by NVIDIA's free AI models for both text (Llama 3.1 70B) and images (FLUX.1-schnell), new educational content with custom AI-generated illustrations is automatically created and deployed on every commit.
 
 ## Features
 
 - **Automatic Content Generation**: AI-powered guide generation using NVIDIA's free Llama 3.1 70B model
-- **AI-Generated Images**: Custom illustrations created by Stable Diffusion XL (free via Hugging Face) for each guide
+- **AI-Generated Images**: Custom illustrations created by NVIDIA's free FLUX.1-schnell (fast, commercial-use) for each guide
 - **Daily Publishing**: New guides automatically generated and published every day
 - **Link Validation**: Automatic checking of external links to ensure quality resources
 - **Instructables-Style Design**: Clear, step-by-step guides with approachable language
@@ -26,7 +26,7 @@ Visit the site at: [https://forexample.ai](https://forexample.ai) (configure you
    - Selects an unused topic from the curated list (50+ topics available)
    - Calls NVIDIA's free API to generate an educational guide
    - Validates all external links to ensure quality resources
-   - Generates a custom illustration using Stable Diffusion XL
+   - Generates a custom illustration using NVIDIA FLUX.1-schnell
    - Finds related guides based on shared tags
    - Creates a markdown file with proper front matter and image attribution
    - Commits the new guide back to the repository
@@ -40,8 +40,7 @@ You can also trigger generation manually or on every push to main branch.
 
 - Node.js 20 or higher
 - A GitHub account
-- A free NVIDIA API key ([get one here](https://build.nvidia.com/))
-- A free Hugging Face API token ([get one here](https://huggingface.co/settings/tokens))
+- A free NVIDIA API key ([get one here](https://build.nvidia.com/)) - used for both text and image generation
 
 ### Getting Your Free NVIDIA API Key
 
@@ -51,18 +50,7 @@ You can also trigger generation manually or on every push to main branch.
 4. Click "Get API Key" button
 5. Copy your API key - you'll use this for both local development and GitHub
 
-**Note**: NVIDIA's API is completely free with generous rate limits - no credit card required!
-
-### Getting Your Free Hugging Face API Token
-
-1. Visit [huggingface.co/settings/tokens](https://huggingface.co/settings/tokens)
-2. Sign up or log in with your Hugging Face account (free)
-3. Click "New token"
-4. Name it (e.g., "forexample-ai-images") and select "Read" role
-5. Click "Generate token"
-6. Copy your token - you'll use this for both local development and GitHub
-
-**Note**: Hugging Face provides completely free access to Stable Diffusion models via their Inference API!
+**Note**: NVIDIA's API is completely free with generous rate limits - no credit card required! One API key gives you access to both text generation (Llama 3.1 70B) and image generation (FLUX.1-schnell).
 
 ### Local Development
 
@@ -82,10 +70,9 @@ You can also trigger generation manually or on every push to main branch.
    gem install bundler jekyll
    ```
 
-4. **Set up your API keys**
+4. **Set up your API key**
    ```bash
    export NVIDIA_API_KEY='your-nvidia-api-key-here'
-   export HUGGINGFACE_API_KEY='hf_your_token_here'
    ```
 
 5. **Generate a guide locally** (optional)
@@ -105,12 +92,12 @@ You can also trigger generation manually or on every push to main branch.
    - Create a new repository on GitHub
    - Name it `forexample.ai` (or your preferred name)
 
-2. **Add your API keys as secrets**
+2. **Add your NVIDIA API key as a secret**
    - Go to repository Settings → Secrets and variables → Actions
-   - Click "New repository secret" and add:
-     - Name: `NVIDIA_API_KEY`, Value: Your NVIDIA API key
-     - Name: `HUGGINGFACE_API_KEY`, Value: Your Hugging Face token
-   - Click "Add secret" for each
+   - Click "New repository secret"
+   - Name: `NVIDIA_API_KEY`
+   - Value: Your free NVIDIA API key from build.nvidia.com
+   - Click "Add secret"
 
 3. **Push your code**
    ```bash
@@ -195,16 +182,22 @@ Edit `scripts/generate-guide.js` to:
 - Modify the prompt for different content styles
 - Adjust the guide structure or format
 
-### AI-Generated Images with Stable Diffusion XL
+### AI-Generated Images with NVIDIA FLUX.1-schnell
 
-The site uses **Stable Diffusion XL** via Hugging Face's free Inference API to automatically generate custom, modern tech illustrations for each guide.
+The site uses **NVIDIA's FLUX.1-schnell** via their free API to automatically generate custom, modern tech illustrations for each guide. This is part of the same free NVIDIA API you're already using for text generation!
+
+**Why FLUX.1-schnell?**
+- ⚡ **Fast**: Generates images in 1-4 steps (vs 50 for dev)
+- ✅ **Commercial use allowed**: Perfect for any project
+- 🎨 **High quality**: Still produces excellent results
+- 💰 **Free**: Same NVIDIA API, no extra cost
 
 **Image Features**:
 - Modern, professional tech illustrations
 - Clean design with vibrant gradients (blues, purples, teals)
 - Abstract geometric shapes and subtle tech motifs
-- High-quality digital art optimized for blog headers
-- Completely free via Hugging Face
+- 1024x1024 resolution, perfect for blog headers
+- Generated in ~10-20 seconds
 
 **Adding Images to Existing Guides**:
 Use the retroactive image generation script to add AI-generated images to all existing guides:
@@ -214,22 +207,23 @@ npm run add-images
 
 This script will:
 1. Scan all guides in `_guides/`
-2. Generate custom illustrations for guides without images using Stable Diffusion XL
+2. Generate custom illustrations for guides without images using NVIDIA FLUX.1-schnell
 3. Update front matter with image paths and attribution
 4. Save images to `assets/images/guides/`
+5. Automatically includes a 2-second delay between generations to respect rate limits
 
 **Important Notes**:
-- First request may take 20-30 seconds as the model loads
-- Subsequent requests are much faster (2-5 seconds)
-- Free tier has rate limits - add delays between requests if generating many images
-- The script automatically includes a 2-second delay between generations
+- Uses the same `NVIDIA_API_KEY` as text generation - no additional setup needed!
+- Each image generation takes ~10-20 seconds
+- Free tier has generous rate limits
+- High-quality results comparable to premium services
 
 **Manual Image Addition**:
 To manually add images to a guide, add these fields to the front matter:
 ```yaml
 image: "/assets/images/guides/your-image.jpg"
-image_credit: "Generated by Stable Diffusion XL"
-image_credit_url: "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0"
+image_credit: "Generated by NVIDIA FLUX.1-schnell"
+image_credit_url: "https://build.nvidia.com/black-forest-labs/flux_1-schnell"
 ```
 
 **Customizing Image Style**:
@@ -239,12 +233,14 @@ Edit the `generateImagePrompt` function in `scripts/generate-guide.js` to change
 - Art style (illustration, diagram, photorealistic, etc.)
 - Mood and aesthetic
 
-**Using Different Models**:
-You can switch to other Hugging Face models by changing the API endpoint:
-- `stable-diffusion-xl-base-1.0` (current, best quality)
-- `stable-diffusion-2-1` (faster, less detailed)
-- `dreamshaper-xl` (more artistic style)
-- Any other text-to-image model on Hugging Face
+**Using Different NVIDIA Models**:
+NVIDIA offers several image generation models on build.nvidia.com:
+- `flux.1-schnell` (current, fast, commercial use allowed)
+- `flux.1-dev` (best quality, slower, non-commercial use only)
+- `stable-diffusion-3-medium` (Stability AI's latest)
+- `stable-diffusion-xl` (classic SDXL)
+
+Change the endpoint in both scripts to switch models.
 
 ## Available Commands
 
@@ -311,13 +307,17 @@ Each guide includes:
 
 ## Troubleshooting
 
-### Workflow fails with "API_KEY not set"
+### Workflow fails with "NVIDIA_API_KEY not set"
 
-Make sure you've added both `NVIDIA_API_KEY` and `HUGGINGFACE_API_KEY` as GitHub secrets (see GitHub Setup step 2).
+Make sure you've added `NVIDIA_API_KEY` as a GitHub secret (see GitHub Setup step 2).
 
-### Image generation fails with "Model is loading"
+### Image generation fails
 
-The first request to Stable Diffusion XL takes 20-30 seconds as the model loads. Wait and retry - subsequent requests will be much faster.
+If you get errors during image generation:
+- Check that your `NVIDIA_API_KEY` is valid and active
+- Ensure you have quota remaining on your free tier
+- Try again - occasional API errors can occur
+- Check the error message for specific details (content filtered, rate limit, etc.)
 
 ### Site not updating after push
 
@@ -339,12 +339,11 @@ The script will automatically reset and reuse topics when all have been generate
 - **GitHub Actions**: 2,000 minutes/month free for public repositories
 - **NVIDIA API**: **Completely FREE** with generous rate limits
   - No credit card required
-  - Access to powerful models like Llama 3.1 70B
+  - Access to powerful models:
+    - Text: Llama 3.1 70B
+    - Images: FLUX.1-schnell (fast), FLUX.1-dev, Stable Diffusion 3, and more
+  - One API key for everything
   - Perfect for educational and personal projects
-- **Hugging Face Inference API**: **Completely FREE**
-  - Free access to Stable Diffusion XL for image generation
-  - No credit card required
-  - Generous rate limits for personal and educational projects
 
 ## Customization Ideas
 
@@ -372,6 +371,6 @@ MIT License - feel free to use this for your own educational sites!
 
 - Built with [Jekyll](https://jekyllrb.com/)
 - Powered by [NVIDIA AI](https://build.nvidia.com/) - free text generation models
-- Images generated by [Stable Diffusion XL](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0) via Hugging Face
+- Images generated by [NVIDIA FLUX.1-schnell](https://build.nvidia.com/black-forest-labs/flux_1-schnell)
 - Hosted on [GitHub Pages](https://pages.github.com/)
 - Design inspired by [Instructables](https://www.instructables.com/)
