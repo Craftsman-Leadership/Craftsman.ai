@@ -534,6 +534,10 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+
     .hero-title {
         font-size: 2rem;
     }
@@ -572,9 +576,17 @@ body {
     .card-image {
         height: 180px;
     }
+
+    .guide-content {
+        padding: 2rem 0;
+    }
 }
 
 @media (max-width: 480px) {
+    .container {
+        padding: 0 0.75rem;
+    }
+
     .hero {
         padding: 2rem 0;
     }
@@ -585,6 +597,10 @@ body {
 
     .card-title {
         font-size: 1.25rem;
+    }
+
+    .guide-content {
+        padding: 1.5rem 0;
     }
 
     .guide-content h2 {
