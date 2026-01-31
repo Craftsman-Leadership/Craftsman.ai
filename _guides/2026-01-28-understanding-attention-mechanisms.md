@@ -26,7 +26,7 @@ No prerequisites needed, but a basic understanding of neural networks and deep l
 
 Attention mechanisms are a technique used in deep learning models to selectively focus on specific parts of the input data. They were first introduced in the context of machine translation, but have since been applied to a wide range of tasks, including image captioning, text summarization, and more.
 
-**💡 Pro Tip:** Think of attention mechanisms as a spotlight that shines on the most important parts of the input data. This allows the model to concentrate on the relevant information and ignore the rest.
+> **💡 Pro Tip:** Think of attention mechanisms as a spotlight that shines on the most important parts of the input data. This allows the model to concentrate on the relevant information and ignore the rest.
 
 ### Step-by-Step Explanation
 
@@ -48,14 +48,14 @@ where `w_i` is the weight for the `i-th` input element and `x_i` is the `i-th` i
 
 The attention mechanism computes the weights `w` based on the input data `x` and a set of learnable parameters `θ`. The most common attention mechanism is the **scaled dot-product attention**.
 
-**⚠️ Watch Out:** The scaled dot-product attention mechanism can be computationally expensive for large input sequences.
+> **⚠️ Watch Out:** The scaled dot-product attention mechanism can be computationally expensive for large input sequences.
 
 #### 3. **Self-Attention**
 ---------------------
 
 Self-attention is a type of attention mechanism that allows the model to attend to different parts of the input sequence simultaneously. This is particularly useful for tasks like machine translation, where the model needs to consider the entire input sequence to generate the output.
 
-**🎯 Key Insight:** Self-attention is a key component of many state-of-the-art AI models, including transformers.
+> **🎯 Key Insight:** Self-attention is a key component of many state-of-the-art AI models, including transformers.
 
 ## Real-World Examples
 --------------------

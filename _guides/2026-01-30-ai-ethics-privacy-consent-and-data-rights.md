@@ -51,20 +51,20 @@ Data rights refer to the rights individuals have over their personal data, inclu
 
 > **🎯 Key Insight:** Data rights are essential in ensuring that individuals have control over their personal data and can make informed decisions about how it's used.
 
-**Real-World Examples**
+## Real-World Examples
 ------------------------
 
 * **Facial Recognition Technology**: Many countries have implemented facial recognition technology to enhance public safety. However, this technology raises concerns about privacy and consent. AI ethics helps us navigate these concerns and ensure that individuals' rights are protected.
 * **Smart Home Devices**: Smart home devices, such as Amazon Echo and Google Home, rely on personal data to function effectively. AI ethics ensures that these devices respect individuals' privacy and obtain informed consent before collecting and processing their data.
 
-**Try It Yourself**
+## Try It Yourself
 -------------------
 
 1. **Reflect on your own data usage**: Think about the AI systems you use daily and how they collect and process your personal data. Consider the potential risks and benefits of sharing your data.
 2. **Explore AI ethics frameworks**: Research and explore AI ethics frameworks, such as the Fairness, Accountability, and Transparency (FAT) framework, to learn more about the principles and guidelines for AI development and use.
 3. **Participate in AI ethics discussions**: Join online communities and forums to discuss AI ethics with others and stay up-to-date on the latest developments and concerns.
 
-**Key Takeaways**
+## Key Takeaways
 ----------------
 
 * AI ethics is a multidisciplinary field that combines computer science, philosophy, law, and social sciences to ensure responsible AI development and use.
@@ -72,7 +72,7 @@ Data rights refer to the rights individuals have over their personal data, inclu
 * AI systems should always obtain informed consent before collecting and processing personal data.
 * Data rights are crucial in ensuring that individuals have control over their personal data.
 
-**Further Reading**
+## Further Reading
 -------------------
 
 * [AI Now Institute](https://ainowinstitute.org/) - A research institute that explores the social implications of AI and automation.

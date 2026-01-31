@@ -23,7 +23,7 @@ Hey there, fellow AI enthusiasts! 😊 Today, we're going to talk about somethin
 
 Training AI models requires massive computational resources, which translates to a significant amount of energy consumption. A single training session can emit as much carbon as a car driving for thousands of miles! 🚗💨 According to a study by the University of Massachusetts Amherst, training a single AI model can generate up to 284,000 kilograms of CO2 equivalent, which is roughly the same as the annual emissions of 60 cars.
 
-**💡 Pro Tip:** When choosing a cloud provider for your AI projects, consider their commitment to renewable energy and carbon offsetting.
+> **💡 Pro Tip:** When choosing a cloud provider for your AI projects, consider their commitment to renewable energy and carbon offsetting.
 
 **The Main Culprits: GPU Usage and Data Centers**
 ----------------------------------------------

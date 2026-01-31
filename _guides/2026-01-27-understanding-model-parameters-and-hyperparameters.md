@@ -19,7 +19,7 @@ image_credit_url: "https://build.nvidia.com/black-forest-labs/flux_1-schnell"
 
 As we delve deeper into the world of AI, it's essential to understand the building blocks of our models. In this guide, we'll explore the fascinating realm of model parameters and hyperparameters. I'm excited to share this knowledge with you, as it's a crucial aspect of creating effective AI models.
 
-**Prerequisites**
+## Prerequisites
 -----------------
 
 No prerequisites needed! Just a basic understanding of AI concepts and a willingness to learn.
@@ -52,7 +52,7 @@ Finding the optimal hyperparameters can be a challenging task. There are several
 
 > **⚠️ Watch Out:** Hyperparameter tuning can be computationally expensive and time-consuming.
 
-**Real-World Examples**
+## Real-World Examples
 ---------------------
 
 Let's take a look at some real-world examples to illustrate the importance of model parameters and hyperparameters.
@@ -65,7 +65,7 @@ Let's take a look at some real-world examples to illustrate the importance of mo
 
 Model parameters and hyperparameters are crucial components of AI models. By understanding how to optimize these parameters, we can create more accurate, efficient, and effective models. This, in turn, can lead to breakthroughs in various fields like computer vision, NLP, and robotics.
 
-**Try It Yourself**
+## Try It Yourself
 ------------------
 
 Here are some practical suggestions to try:
@@ -74,7 +74,7 @@ Here are some practical suggestions to try:
 * Try using a grid search or random search to tune hyperparameters for a specific problem.
 * Explore Bayesian optimization libraries like Optuna or Hyperopt to optimize hyperparameters.
 
-**Key Takeaways**
+## Key Takeaways
 -----------------
 
 * Model parameters are learned from the data to make predictions.
@@ -82,7 +82,7 @@ Here are some practical suggestions to try:
 * Hyperparameter tuning can be computationally expensive and time-consuming.
 * Optimizing model parameters and hyperparameters is crucial for creating effective AI models.
 
-**Further Reading**
+## Further Reading
 -------------------
 
 * [3Blue1Brown Neural Networks](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) - Excellent visual explanation series

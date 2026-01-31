@@ -8,7 +8,8 @@
     "check-links": "node scripts/check-links.js",
     "add-topic": "node scripts/add-topic.js",
     "show-tags": "node scripts/add-topic.js --tags",
-    "add-images": "node scripts/add-images-retroactive.js"
+    "add-images": "node scripts/add-images-retroactive.js",
+    "fix-formatting": "node scripts/fix-guide-formatting.js"
   },
   "keywords": [
     "ai",

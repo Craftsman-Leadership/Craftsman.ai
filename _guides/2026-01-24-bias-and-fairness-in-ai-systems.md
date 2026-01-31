@@ -16,7 +16,7 @@ image_credit_url: "https://build.nvidia.com/black-forest-labs/flux_1-schnell"
 
 Hey there, AI enthusiasts! 👋 Today, we're going to tackle a crucial topic that's been on my mind lately: bias and fairness in AI systems. As we rely more on artificial intelligence to make decisions, it's essential to understand how our own biases can sneak into these intelligent machines. So, grab a cup of coffee, and let's dive into the world of AI fairness! ☕️
 
-**Prerequisites**
+## Prerequisites
 ----------------
 
 No prerequisites needed! This guide is designed for anyone interested in AI, regardless of their background. If you're new to AI, don't worry; we'll cover the basics as we go along.
@@ -24,7 +24,7 @@ No prerequisites needed! This guide is designed for anyone interested in AI, reg
 **What's the Big Deal About Bias in AI?**
 ----------------------------------------
 
-**💡 Pro Tip:** AI systems are only as good as the data they're trained on. If the data is biased, the AI will be too!
+> **💡 Pro Tip:** AI systems are only as good as the data they're trained on. If the data is biased, the AI will be too!
 
 Imagine you're building a facial recognition system to help identify people in a crowd. Sounds useful, right? But, what if the system is trained on a dataset that's predominantly white and male? The AI might struggle to recognize people with different skin tones or facial features, leading to biased results. This is just one example of how bias can creep into AI systems.
 
@@ -52,7 +52,7 @@ When training AI models, it's easy to introduce bias through:
 * **Optimization algorithms**: If your optimization algorithm is biased towards certain solutions, your AI system will learn to recognize those biases.
 * **Hyperparameter tuning**: If you tune hyperparameters to optimize performance on a biased dataset, your AI system will learn to recognize those biases.
 
-**Real-World Examples**
+## Real-World Examples
 ----------------------
 
 ### **Google's Facial Recognition Debacle**
@@ -63,21 +63,21 @@ In 2018, Google's facial recognition system was criticized for misidentifying bl
 
 In 2018, it was revealed that Amazon's hiring algorithm was biased against women. The algorithm was trained on historical hiring data, which was predominantly male.
 
-**Try It Yourself**
+## Try It Yourself
 -----------------
 
 1. **Explore biased datasets**: Look at datasets like the "Diversity in Faces" dataset, which highlights the diversity of faces and skin tones. Use this dataset to train a facial recognition system and see how it performs.
 2. **Use fairness metrics**: Implement fairness metrics like demographic parity or equalized odds to evaluate your AI system's performance.
 3. **Test for bias**: Use tools like AI Fairness 360 to test your AI system for bias and identify areas for improvement.
 
-**Key Takeaways**
+## Key Takeaways
 -----------------
 
 * Bias can creep into AI systems through data collection, preprocessing, and model training.
 * Fairness metrics can help evaluate AI system performance.
 * Testing for bias is crucial to identifying areas for improvement.
 
-**Further Reading**
+## Further Reading
 -------------------
 
 * [AI Fairness 360](https://ai-fairness-360.org/) - A comprehensive toolkit for fairness metrics and bias testing.

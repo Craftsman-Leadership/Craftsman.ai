@@ -26,7 +26,7 @@ No prerequisites needed! We'll cover the basics of Gradient Descent, so feel fre
 
 Gradient Descent is an optimization algorithm used to minimize the loss function of a model. It's an iterative process that adjusts the model's parameters to reduce the error between predicted and actual outputs.
 
-**💡 Pro Tip:** Think of Gradient Descent as a hiker trying to find the lowest point in a valley. The hiker starts at a random point and takes small steps downhill, adjusting their direction based on the slope of the terrain. Similarly, Gradient Descent takes small steps in the direction of the negative gradient of the loss function, adjusting the model's parameters to minimize the error.
+> **💡 Pro Tip:** Think of Gradient Descent as a hiker trying to find the lowest point in a valley. The hiker starts at a random point and takes small steps downhill, adjusting their direction based on the slope of the terrain. Similarly, Gradient Descent takes small steps in the direction of the negative gradient of the loss function, adjusting the model's parameters to minimize the error.
 
 ### How Gradient Descent Works
 
@@ -58,7 +58,7 @@ There are several variants of Gradient Descent, each with its strengths and weak
 * **Pros:** Balances batch and stochastic gradient descent, fast convergence.
 * **Cons:** Requires careful choice of batch size.
 
-**⚠️ Watch Out:** Choosing the right variant of Gradient Descent depends on the specific problem and dataset. Experiment with different variants to find the best approach.
+> **⚠️ Watch Out:** Choosing the right variant of Gradient Descent depends on the specific problem and dataset. Experiment with different variants to find the best approach.
 
 ## Real-World Examples 🌎
 -------------------------
@@ -68,7 +68,7 @@ Gradient Descent is widely used in many applications, including:
 * **Image classification**: Gradient Descent is used to train convolutional neural networks (CNNs) for image classification tasks.
 * **Natural language processing**: Gradient Descent is used to train recurrent neural networks (RNNs) for language modeling and text classification tasks.
 
-**🎯 Key Insight:** Gradient Descent is a fundamental algorithm in AI, and understanding its variants and applications is crucial for building efficient models.
+> **🎯 Key Insight:** Gradient Descent is a fundamental algorithm in AI, and understanding its variants and applications is crucial for building efficient models.
 
 ## Try It Yourself 🎯
 ----------------------

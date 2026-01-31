@@ -157,19 +157,24 @@ VISUAL FORMATTING (CRITICAL - FOLLOW EXACTLY):
 - Create variety in section structure
 
 CONTENT STRUCTURE:
-1. Introduction (2-3 sentences with personality - hook the reader!)
-2. Prerequisites (if any, or state "No prerequisites needed") - use ## header
-3. Step-by-step explanation with clear ## headers (3-5 main sections with varied formatting)
-4. Real-world examples with personal commentary on why they matter - use ## header
-5. Try It Yourself (practical, specific suggestions) - use ## header
-6. Key Takeaways (bullet points) - use ## header
-7. Further Reading (2-3 ACTUAL RESOURCES with real URLs as markdown links) - use ## header
+1. Article Title (H1 with equals signs underneath) - Format as: **Title Text** 🚨 followed by a line of equals signs
+2. Introduction (2-3 sentences with personality - hook the reader!)
+3. Prerequisites (if any, or state "No prerequisites needed") - use ## header
+4. Step-by-step explanation with clear ## headers (3-5 main sections with varied formatting)
+5. Real-world examples with personal commentary on why they matter - use ## header
+6. Try It Yourself (practical, specific suggestions) - use ## header
+7. Key Takeaways (bullet points) - use ## header
+8. Further Reading (2-3 ACTUAL RESOURCES with real URLs as markdown links) - use ## header
 
-IMPORTANT HEADER FORMATTING:
+CRITICAL HEADER FORMATTING RULES:
+- First line must be the article title as H1: **Title Text** 🚨
+- Second line must be equals signs (minimum 50 characters): ====================================================================
 - Use ## for all section headers (Prerequisites, main sections, Real-World Examples, Try It Yourself, Key Takeaways, Further Reading)
-- Example: ## Prerequisites
-- Example: ## What is [Topic]?
-- Example: ## Real-World Examples
+- Example of correct title format:
+  **Understanding Neural Networks** 🚨
+  ====================================================================
+
+  Your introduction text here...
 - DO NOT use just **bold text** for headers - they must be actual ## headers
 
 FURTHER READING FORMAT:
