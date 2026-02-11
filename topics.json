@@ -455,6 +455,12 @@
       "difficulty": "advanced",
       "tier": "strategic",
       "tags": ["sbir", "program-of-record", "transition", "scaling"]
+    },
+    {
+      "title": "The Altitude Problem: When Senior Leaders Lose Touch with Mission Execution",
+      "difficulty": "advanced",
+      "tier": "leadership",
+      "tags": ["toxic-leadership", "organizational-disconnect", "senior-leadership", "mission-execution", "bureaucracy"]
     }
   ]
 }
