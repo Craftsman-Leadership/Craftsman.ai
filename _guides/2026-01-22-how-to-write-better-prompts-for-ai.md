@@ -1,4 +1,6 @@
 ---
+published: false
+---
 layout: guide
 title: "How to Write Better Prompts for AI"
 date: 2026-01-22
