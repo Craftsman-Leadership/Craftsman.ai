@@ -1,15 +1,15 @@
 # Site settings
 title: Craftsman Leadership
-email: contact@craftsmanleadership.com
+email: jesse@craftsmanleadership.com
 description: >-
   Strategic Leadership for Government Contracting. Teaching contractors how to think strategically 
-  about building partnerships with the Department of Defense. Founded by Dr. Jesse W. Johnson, DSL, MAOM - 
-  Lieutenant Colonel, U.S. Air Force.
+  about building partnerships with the Department of War. Founded by Dr. Jesse W. Johnson, DSL, MAOM - 
+  Lieutenant Colonel, U.S. Air Force (Retired).
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://craftsmanleadership.com" # the base hostname & protocol for your site
-author: "Dr. Jesse W. Johnson, DSL, MAOM"
+url: "https://craftsmanleadership.ai" # the base hostname & protocol for your site
+author: "Dr. Jesse W. Johnson, DSL, MAOM, Lt Col USAF (Ret.)"
 twitter_username: 
-github_username: 
+github_username: kjw3
 
 # Build settings
 markdown: kramdown
