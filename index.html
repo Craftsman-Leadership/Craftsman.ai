@@ -1,4 +1,5 @@
-
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -338,19 +339,29 @@
         <section id="guides">
             <h2 class="section-title">Government Contracting Guides</h2>
             <div class="guides-grid">
+                {% assign sorted_guides = site.guides | sort: 'date' | reverse %}
+                {% for guide in sorted_guides %}
                 <article class="guide-card">
-                    <div class="guide-badge">Advanced</div>
-                    <h3>Navigating Other Transaction Agreements (OTAs)</h3>
-                    <p>A comprehensive guide to understanding and leveraging OTAs for non-traditional contractors working with the DoW.</p>
-                    <a href="/guides/navigating-other-transaction-agreements-otas/">Read Guide →</a>
+                    <div class="guide-badge">{{ guide.difficulty | capitalize }}</div>
+                    <h3>{{ guide.title }}</h3>
+                    <p>{{ guide.content | strip_html | truncatewords: 30 }}</p>
+                    <a href="{{ guide.url | relative_url }}">Read Guide →</a>
                     <div class="tags">
-                        <span class="tag">OTA</span>
-                        <span class="tag">Non-Traditional</span>
-                        <span class="tag">Acquisition</span>
+                        {% for tag in guide.tags limit:3 %}
+                        <span class="tag">{{ tag }}</span>
+                        {% endfor %}
                     </div>
                 </article>
+                {% endfor %}
+            </div>
+        </section>
+    </main>
 
-                <article class="guide-card">
-                    <div class="guide-badge">Beginner</div>
-                    <h3>Managing Your First Government Contract</h3>
-                    <p>Essential lessons learned from successfully execu
+    <footer class="footer">
+        <div>
+            <p>© {{ 'now' | date: "%Y" }} Craftsman Leadership. All rights reserved.</p>
+            <p><a href="mailto:jesse@craftsmanleadership.com">jesse@craftsmanleadership.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>
