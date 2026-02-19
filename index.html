@@ -222,14 +222,17 @@
         .guide-badge {
             display: inline-block;
             padding: 0.25rem 0.75rem;
-            background: var(--primary-blue);
-            color: var(--white);
             border-radius: 4px;
             font-size: 0.75rem;
             font-weight: 700;
             text-transform: uppercase;
             margin-bottom: 1rem;
+            color: var(--white);
         }
+
+        .guide-badge--beginner     { background: #4a7c59; }
+        .guide-badge--intermediate { background: #c19a6b; color: #1a2332; }
+        .guide-badge--advanced     { background: #7a3550; }
 
         .guide-card h3 {
             font-size: 1.5rem;
@@ -367,7 +370,7 @@
                 {% assign sorted_guides = site.guides | sort: 'date' | reverse %}
                 {% for guide in sorted_guides %}
                 <article class="guide-card">
-                    <div class="guide-badge">{{ guide.difficulty | capitalize }}</div>
+                    <div class="guide-badge guide-badge--{{ guide.difficulty }}">{{ guide.difficulty | capitalize }}</div>
                     <h3><a href="{{ guide.url | relative_url }}">{{ guide.title }}</a></h3>
                     <p><a href="{{ guide.url | relative_url }}">{{ guide.content | strip_html | truncatewords: 30 }}</a></p>
                     <a href="{{ guide.url | relative_url }}">Read Guide →</a>

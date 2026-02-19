@@ -17,9 +17,9 @@
     --border-color: #dee2e6;
     --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     --shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.15);
-    --beginner-color: #28a745;
-    --intermediate-color: #ffc107;
-    --advanced-color: #dc3545;
+    --beginner-color: #4a7c59;
+    --intermediate-color: #c19a6b;
+    --advanced-color: #7a3550;
     --border-radius: 8px;
 }
 
@@ -254,7 +254,7 @@ body {
 
 .difficulty-intermediate {
     background-color: var(--intermediate-color);
-    color: var(--text-color);
+    color: var(--primary-dark);
 }
 
 .difficulty-advanced {
