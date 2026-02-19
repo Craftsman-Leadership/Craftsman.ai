@@ -197,8 +197,6 @@
             border-radius: 12px;
             padding: 2rem;
             transition: all 0.3s ease;
-            position: relative;
-            cursor: pointer;
         }
 
         .guide-card:hover {
@@ -207,12 +205,18 @@
             box-shadow: 0 10px 25px rgba(0,0,0,0.15);
         }
 
-        .guide-card a.card-link::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            border-radius: 12px;
-            z-index: 1;
+        .guide-card h3 a {
+            color: var(--primary-dark);
+            text-decoration: none;
+        }
+
+        .guide-card h3 a:hover {
+            color: var(--primary-blue);
+        }
+
+        .guide-card p a {
+            color: var(--neutral-gray);
+            text-decoration: none;
         }
 
         .guide-badge {
@@ -364,9 +368,9 @@
                 {% for guide in sorted_guides %}
                 <article class="guide-card">
                     <div class="guide-badge">{{ guide.difficulty | capitalize }}</div>
-                    <h3>{{ guide.title }}</h3>
-                    <p>{{ guide.content | strip_html | truncatewords: 30 }}</p>
-                    <a href="{{ guide.url | relative_url }}" class="card-link">Read Guide →</a>
+                    <h3><a href="{{ guide.url | relative_url }}">{{ guide.title }}</a></h3>
+                    <p><a href="{{ guide.url | relative_url }}">{{ guide.content | strip_html | truncatewords: 30 }}</a></p>
+                    <a href="{{ guide.url | relative_url }}">Read Guide →</a>
                     <div class="tags">
                         {% for tag in guide.tags limit:3 %}
                         <span class="tag">{{ tag }}</span>
