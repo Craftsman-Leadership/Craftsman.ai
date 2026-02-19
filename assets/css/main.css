@@ -43,13 +43,23 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
+    transition: box-shadow 0.3s ease;
+}
+
+.site-header.scrolled {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
 }
 
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
+    padding: 1.1rem 0;
+    transition: padding 0.3s ease;
+}
+
+.site-header.scrolled .nav {
+    padding: 0.4rem 0;
 }
 
 .site-logo {
@@ -63,9 +73,14 @@ body {
 }
 
 .site-logo img {
-    height: 44px;
+    height: 56px;
     width: auto;
     display: block;
+    transition: height 0.3s ease;
+}
+
+.site-header.scrolled .site-logo img {
+    height: 36px;
 }
 
 .logo-icon {

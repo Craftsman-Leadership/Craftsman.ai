@@ -1,3 +1,11 @@
+// Shrink nav on scroll
+const siteHeader = document.querySelector('.site-header');
+if (siteHeader) {
+    window.addEventListener('scroll', function () {
+        siteHeader.classList.toggle('scrolled', window.scrollY > 50);
+    });
+}
+
 // Search and Filter Functionality
 document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('search');

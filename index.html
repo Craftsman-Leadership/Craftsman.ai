@@ -62,11 +62,17 @@
 
         .nav {
             background: var(--white);
-            padding: 0.75rem 1rem;
+            padding: 1.1rem 1rem;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             position: sticky;
             top: 0;
             z-index: 100;
+            transition: padding 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .nav.nav-scrolled {
+            padding: 0.4rem 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
         }
 
         .nav-content {
@@ -79,9 +85,14 @@
         }
 
         .nav-logo img {
-            height: 44px;
+            height: 56px;
             width: auto;
             display: block;
+            transition: height 0.3s ease;
+        }
+
+        .nav.nav-scrolled .nav-logo img {
+            height: 36px;
         }
 
         .nav-links {
@@ -186,12 +197,22 @@
             border-radius: 12px;
             padding: 2rem;
             transition: all 0.3s ease;
+            position: relative;
+            cursor: pointer;
         }
 
         .guide-card:hover {
             border-color: var(--primary-blue);
             transform: translateY(-5px);
             box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .guide-card a.card-link::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 12px;
+            z-index: 0;
         }
 
         .guide-badge {
@@ -345,7 +366,7 @@
                     <div class="guide-badge">{{ guide.difficulty | capitalize }}</div>
                     <h3>{{ guide.title }}</h3>
                     <p>{{ guide.content | strip_html | truncatewords: 30 }}</p>
-                    <a href="{{ guide.url | relative_url }}">Read Guide →</a>
+                    <a href="{{ guide.url | relative_url }}" class="card-link">Read Guide →</a>
                     <div class="tags">
                         {% for tag in guide.tags limit:3 %}
                         <span class="tag">{{ tag }}</span>
@@ -363,5 +384,11 @@
             <p><a href="mailto:jesse@craftsmanleadership.com">jesse@craftsmanleadership.com</a></p>
         </div>
     </footer>
+    <script>
+        const nav = document.querySelector('.nav');
+        window.addEventListener('scroll', function () {
+            nav.classList.toggle('nav-scrolled', window.scrollY > 50);
+        });
+    </script>
 </body>
 </html>
