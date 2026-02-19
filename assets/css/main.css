@@ -815,3 +815,9 @@ body {
         font-size: 0.95rem;
     }
 }
+/* Remove white bubble from badge */
+.about-badge {
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
