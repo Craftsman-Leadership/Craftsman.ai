@@ -41,15 +41,6 @@
             margin: 0 auto;
         }
 
-        .logo-container {
-            margin-bottom: 1.5rem;
-        }
-
-        .logo {
-            max-width: 400px;
-            height: auto;
-        }
-
         .header h1 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
@@ -70,7 +61,7 @@
 
         .nav {
             background: var(--white);
-            padding: 1rem;
+            padding: 0.75rem 1rem;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             position: sticky;
             top: 0;
@@ -81,9 +72,22 @@
             max-width: 1200px;
             margin: 0 auto;
             display: flex;
+            align-items: center;
+            justify-content: space-between;
             gap: 2rem;
-            justify-content: center;
+        }
+
+        .nav-logo img {
+            height: 44px;
+            width: auto;
+            display: block;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
             flex-wrap: wrap;
+            align-items: center;
         }
 
         .nav a {
@@ -288,26 +292,28 @@
     </style>
 </head>
 <body>
+    <nav class="nav">
+        <div class="nav-content">
+            <a href="#" class="nav-logo">
+                <img src="Logo_image.png" alt="Craftsman Leadership">
+            </a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#guides">Guides</a>
+                <a href="mailto:jesse@craftsmanleadership.com">Contact</a>
+                <a href="https://github.com/Craftsman-Leadership/Craftsman.ai">GitHub</a>
+            </div>
+        </div>
+    </nav>
+
     <header class="header">
         <div class="header-content">
-            <div class="logo-container">
-                <img src="Logo_image.png" alt="Craftsman Leadership" class="logo">
-            </div>
             <h1>Strategic Leadership for Government Contracting</h1>
             <p>Teaching contractors how to think strategically about building partnerships with the Department of War</p>
             <p class="greek-motto">διακονέω</p>
             <p class="founder-info">Founded by Dr. Jesse W. Johnson, DSL, MAOM - Lieutenant Colonel, U.S. Air Force (Retired)</p>
         </div>
     </header>
-
-    <nav class="nav">
-        <div class="nav-content">
-            <a href="#about">About</a>
-            <a href="#guides">Guides</a>
-            <a href="mailto:jesse@craftsmanleadership.com">Contact</a>
-            <a href="https://github.com/kjw3">GitHub</a>
-        </div>
-    </nav>
 
     <main class="container">
         <section id="about" class="profile-section">
