@@ -1,7 +1,7 @@
 {
-  "name": "forexample-ai",
+  "name": "craftsman-leadership",
   "version": "1.0.0",
-  "description": "AI education guides automatically generated and published on GitHub Pages",
+  "description": "Craftsman Leadership - government contracting education guides automatically generated and published on GitHub Pages",
   "main": "scripts/generate-guide.js",
   "scripts": {
     "generate": "node scripts/generate-guide.js",

@@ -62,16 +62,20 @@ Write this guide following the Craftsman Leadership framework and voice.`;
     method: 'POST',
     headers: {
       'Authorization': `Bearer ${NVIDIA_API_KEY}`,
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
+      'Accept': 'application/json'
     },
     body: JSON.stringify({
-      model: 'meta/llama-3.1-70b-instruct',
+      model: 'moonshotai/kimi-k2.5',
       messages: [
         { role: 'system', content: SYSTEM_PROMPT },
         { role: 'user', content: prompt }
       ],
-      temperature: 0.7,
-      max_tokens: 4000
+      temperature: 1.0,
+      top_p: 1.0,
+      max_tokens: 16384,
+      stream: false,
+      chat_template_kwargs: { thinking: true }
     })
   });
 
